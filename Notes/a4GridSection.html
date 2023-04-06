@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165884#overview
+-base:
+section.grid .main-bg .section
+    div.main-content .grid-one-content
+        h3.grid-main-heading
+        p.grid-description
+        div.grid
+            article
+                h4
+                p
+        div.grid
+            article
+                h4
+                p
+        div.grid
+            article
+                h4
+                p
+section .gallery .section .white-bg
+    div .main-content
+        h1
+
+4:17 - .grid-one-content {height 100vh;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;}
+6:58 - .grid {display:grid;
+    grid-template-columns:repeat(3, 1fr)
+    gap:1rem;
+
+    counter-reset:grid-counter;}
+7:53 - .grid h3{font-size:1rem;
+    
+    padding-bottom:3rem;
+    padding-left:3rem;
+    position:relative;}
+9:52 - .grid h3::before{font-style:italic;
+    transform: rotate(5deg);
+    counter-increment:grid-counter;
+    content:counter(grid-counter);
+    font-size:4rem;
+    
+    top:-4rem;
+    left:-4rem;
+    position:absolute;
+    }
+9:52 - 'before means that is back to the title'
+16:49 - .grid-main-heading{margin-bottom:0.5rem;}
+17:00 - .grid-description{padding-bottom:2rem;}
+
+fixing bugs:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165888#overview
+0:40 - 'changing height for min-height for fix bug. For the height window be 100vh
+    forever.'
+    {min-height:100vh;}
+1:21 - ''flex-flow:column wrap;' is the same as:
+    flex-direction:column; flex-wrap: wrap;'
+'delete:'
+    1:38 - .top3-content {flex-flow: column wrap}
+'put'
+    1:38 - .top3-content {flex-direction:column; flex-wrap: nowrap;}
+=
+-4¹ class(425):https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165884#overview
+.grid-description = p
+.grid-main-heading = h2
+.grid-one-content = div
+.grid .main-bg .section = section
+
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165882#overview
+6:32 - section {display:flex; flex-flow:column wrap;
+    justify-content:center; align-items:center;}
+7:32 - html {scroll-behavior: smooth;}
+=
+-3¹ class:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165882#overview
+section = .top3content
+
+
+===
+-2¹ class:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165880#overview
+section div div = .intro-img
+section div = .main-content .intro-content
+section = .intro
+section div div = .intro-text-content
+div = .intro-img
+
+-1¹ class:
+body = .main-bg
+aside = .menu
+section = .main-content
+section = .menu-content
+
+    </pre>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
++link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165896#overview
++base(html):
+-section 3:
+section.grid .main-bg .section
+    div.main-content .grid-one-content
+        h3.grid-main-heading
+        p.grid-description
+        div.grid
+            article
+                h4
+                p
+        div.grid
+            article
+                h4
+                p
+        div.grid
+            article
+                h4
+                p
+
+-section 4:
+section.grid-one .white-bg .section
+    div.main-content .grid-one-content
+        h3.grid-main-heading
+        p.grid-description
+
+        div.grid
+            div.gallery-img
+                img
+
+-section 5 (same as section 3{ more information }):
+
+-section 6 (repeat section 2):
+'put these tags after pasted section 2:'
+div.responsive-table
+    table
+        caption
+        thead
+            tr
+                th
+                th
+                th
+        tbody
+            tr
+                td
+                td
+                td
+
+        tfoot
+            tr
+                td
+                td
+                td 'some text'
+-section 7(repeat section 1):
+'put these tags in pasted section 1'
+section.intro .main-bg .section
+        """(tags used before)"""
+    div.main-content .intro-content
+        div.intro-img
+            img src='' alt='random text'
+        """new:"""
+        div.contact-form
+            fieldset.form-grid
+                legend
+                div.form-group
+                    input type='text' id='first-name' name='first-name' placeholder='watever'
+                    label for='first-name'
+                div.form-group
+                    input type='email' id='email' name='email' placeholder='watever'
+                    label for='email'
+                div.form-group .full-width
+                    textarea type='message' cols='54' rows='6' id='message' name='message' placeholder='watever'
+                    label for='message'
+                div.form-group
+                    button type='submit' "Send a message"
+footer.footer .white-bg id='footer' 
+    p
+        a rel='nofollow' target='_blank' href='someLinkOfMe.com'
+            span.heart
+
++Time and changes(CSS):
+6:12 - .contact-form {grid-column: span2;}
+7:58 - .contact-form .form-grid {border:none;
+    display:flex; flex-direction:row;flex-wrap:wrap;}
+9:27 - .form-group {flex: 1 1 320px;}
+11:20 - .form-group label {display:block;
+    margin-bottom: 0.5rem;}
+13:42 - * {box-sizing: border-box;}
+16:32 - body .full-width {width:100%; flex: 1 1 100%;}
+18:44 - .form-group button {
+    color:var(--white-color);background:none;
+    border:0.33rem solid var(--white-color);
+    font-size:1rem;padding:0.7rem;
+    cursor:pointer;
+    transition:all 243ms ease-in-out;}
+19:40 - .form-group button:hover {
+    color:var(--primary-color);background:var(--white-color);}
+21:01 - .form-group input, .form-group textarea {
+    background:var(--white-color); border:none;
+    font-size:1rem;
+    width:100%; padding:0.7rem 1rem;}
+22:16 - .form-group::placeholder {color:var(--light-gray-color)}
+24:14 - .form-grid legend {font-style:italic;
+    font-size:0.666rem;margin-bottom:1rem;}
+27:00 - .form-group input:focus, .form-group textarea:focus {
+    box-shadow:0 0 0.3rem 0.1rem var(--secondary-color);}
+32:39 - .footer {
+    text-align: center;
+}
+    .footer a {
+        color:#444;
+    }
+    .heart {color:var(--secondary-color)}
+34:06 - .footer p {padding:1rem;margin:0;}
+
+
+"""
+Explanations:
+
+"""
+
+
+=
+-4¹ class(425):https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165884#overview
+.grid-description = p
+.grid-main-heading = h2
+.grid-one-content = div
+.grid .main-bg .section = section
+
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165882#overview
+6:32 - section {display:flex; flex-flow:column wrap;
+    justify-content:center; align-items:center;}
+7:32 - html {scroll-behavior: smooth;}
+=
+-3¹ class:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165882#overview
+section = .top3content
+
+
+===
+-2¹ class:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165880#overview
+section div div = .intro-img
+section div = .main-content .intro-content
+section = .intro
+section div div = .intro-text-content
+div = .intro-img
+
+-1¹ class:
+body = .main-bg
+aside = .menu
+section = .main-content
+section = .menu-content
+
+</pre>
+</body>
+
+</html>

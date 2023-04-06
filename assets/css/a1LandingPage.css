@@ -1,0 +1,259 @@
+*{margin:0;padding:0;
+    box-sizing:border-box;}
+
+html{color:black;background:white;
+    scroll-behavior:smooth;
+
+    font-size:27px;}
+
+:root{--firstColor:#5D0464;
+    --secondColor:red;
+    --white:white;
+    --whiteTransparent:rgb(255, 255, 255, 0.81);
+    --blackTransparent:rgba(127.5,127.5,127.5,0.42);
+    --blackLittleTransparent:rgba(0,0,0,0.75)}
+
+body{font-size:100%;
+    font-family: 'Abel', sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family: 'Raleway', sans-serif;
+    text-transform:uppercase;}
+h1{font-size:171%;}
+h2{font-size:162%;}
+h3{font-size:153%;
+    margin-block-end: 0.33rem;}
+h4{font-size:144%;}
+h5{font-size:135%;}
+h6{font-size:126%;}
+
+#menu {display:none;}
+#top {display:none;}
+
+.bBackground{/*means: Beautiful background*/
+    color:var(--white);background-image: url('../img/a1rainbow-vortex.svg');
+    padding:1.8%;
+    min-height:100vh;
+    background-size:cover;background-position:center center;
+    gap:200px;}
+.sBackground{/*means: Simple background*/
+    color:var(--firstColor);background-color: var(--white);
+    padding: 1.8%;
+    min-height:100vh;
+    background-size:cover;background-position:center center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;}
+.divBlockWhite{background:white;
+    height:56.66px;}
+
+.littleMenu{
+    margin:0 auto;}
+
+/* -Base:
+https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/34715822#overview*/
+.classAside{background:var(--whiteTransparent);border-bottom:var(--blackTransparent) solid 0.01rem;
+    width:100%;left:0;top:0;right:0;
+    position:fixed;z-index:1;}
+
+.h2Class{color:var(--firstColor);font-size:162%;}
+
+.classSection{padding-top:0;padding-bottom:0;
+    display:flex;justify-content:space-between;align-items:center;}
+
+.classSection a{color:var(--firstColor);
+    padding:0.42rem 0.81rem 0.42rem 0.81rem;}
+
+.classSection ul{display:flex;list-style:none;}
+
+.classSection ul li a{display:block;position:relative;}
+.classSection ul li a::after{background:var(--secondColor);
+    transition:243ms ease-in-out all;
+    width:0;height:0.09rem;
+    left:50%;bottom:0.42rem;
+    content:'';
+    position:absolute;}
+.classSection ul li a:hover::after{width:50%;left:25%;}
+
+a{text-decoration:none;}
+
+/* -Section 1:
+https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165880#overview*/
+.sectionDiv1{display:grid; grid-template-columns:1fr 1.5fr;
+    gap:1rem;}
+.sectionDivDiv1, .sectionDivDiv1-2iconJS{color:white;
+    display:flex;flex-flow:column nowrap;align-items:center;}
+.sectionDivDiv1 h3{text-transform:uppercase;
+    font-size:2.34rem;}
+.sectionDiv1-2iconJS img{max-width:100%;height:auto;align-items: center;}
+
+/* -Section 2:
+link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165882#overview*/
+#section2, #section6{color:var(--firstColor);
+    box-sizing:border-box;
+    min-height:100vh;}
+#section2 div, #section6 div{padding:15vh 15vw;}
+#section2 h3, #section6 h3{font-weight:bold;
+    font-size:3.3rem;
+    display:flex; justify-content:center;align-items:center;}
+#section2 p, #section6 p{font-size:0.8rem;}
+
+/* -Section 3:
+link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165884#overview*/
+#section3, #section5 {
+    display:flex;
+    
+    justify-content:center;
+    flex-flow:column wrap;}
+#section3 h3, #section5 h3 {
+    font-size: 3.3rem;margin-bottom:0.5rem;}
+#section3 p, #section5 p {font-size:0.8rem;padding-bottom:1rem;}
+
+#section3 div div:nth-child(2),
+#section5 div div:nth-child(2) {display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1rem;
+    
+    counter-reset:grid-counter;}
+#section3 div h4, #section5 div h4{font-size:2.1rem;
+    position:absolute;position:relative;
+    margin-left:1.5rem;}
+#section3 div h4::before, #section5 div h4::before {
+    font-style:italic;
+    transform: rotate(6deg);
+    counter-increment:grid-counter;content:counter(grid-counter);
+    position:absolute;
+    top:-0.5rem;left:-1.6rem;
+    }
+
+/* -Section 4:
+link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165890#overview*/
+
+#section4 {
+    display:flex;
+    
+    justify-content:center;
+    flex-flow:column wrap;
+    padding-top:3rem;}
+#section4 h3 {
+    font-size: 3.3rem;margin-bottom:0.5rem;}
+#section4 p {font-size:0.8rem;padding-bottom:1rem;}
+
+
+#section4 div div {display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:1rem;}/*images*/
+#section4 div div {width:100%; max-width:1280px;
+    overflow:hidden;}
+#section4 div div div img {transition: all 243ms ease-in-out}
+#section4 div div div img:hover {transform:translate(-3%,-3%) scale(1.2) rotate(-3deg)}
+
+/*https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165894#overview*/
+#section6 {overflow:hidden; overflow-x:auto;
+    
+    width:100%;height:auto;
+
+    display:flex; justify-content:center; align-items:center}
+table {border-collapse:collapse;
+    min-width:360px;width:100%;}
+caption {font-family:italic;
+    text-align:left;}
+table th, tfoot td {background:var(--blackTransparent);}
+table th, table td {white-space:nowrap;
+    border:var(--blackTransparent) solid 0.1rem;
+    padding:0.33rem;
+    text-align:left;}
+
+/*https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165896#overview*/
+#section7 {padding-top:3rem;}
+#section7 img{max-width:100%;height:auto;align-items: center;}
+
+#section7 div:nth-child(1) {display:grid; grid-template-columns:2fr 1fr;gap:1rem;}
+#section7 div:nth-child(1) div,
+#section7 div:nth-child(3)
+, #section7 fieldset {border:none;
+    display:flex; flex-direction:row; flex-wrap:wrap;
+    gap:0.5rem;}  
+#section7 fieldset div {min-width:320px;
+    flex:1 1 auto;}
+#section7 div div:nth-child(3) {grid-column: span 2;}
+
+#section7 fieldset div {display:block; margin-top:0rem;}
+#section7 fieldset input
+, #section7 fieldset textarea {margin-top:-0.45rem;}
+
+#section7 fieldset div:nth-child(4) {width:100%; flex:1 1 100%;}
+
+#section7 fieldset div button {color:var(--white); background:none;
+    border:0.1rem solid var(--white);
+    font-size:0.7rem; padding:0.3rem;
+    cursor:pointer; transition:all 243ms ease-in-out;}
+#section7 fieldset div button:hover {color:var(--firstColor);background:var(--white)}
+
+#section7 Fieldset Div input
+, #section7 Fieldset Div textarea {background:var(--white); border:none;
+    font-size:0.6rem;width:100%;padding:0.4rem 0.3rem;}
+
+#section7 Fieldset Div input::placeholder,
+#section7 Fieldset Div textarea::placeholder {color:var(--blackLittleTransparent);}
+
+.section7FieldsetDiv input:focus,
+#section7 Fieldset Div textarea:focus {box-shadow:0 0 0.1rem 0.1rem black;}
+
+#section7 Div Div:nth-child(3) fieldset legend {font-style:italic;
+    font-size:0.9rem;margin-bottom:-0.1rem;}
+
+
+/**/
+footer {color:var(--blackLittleTransparent);background:var(--white);
+    height:86.4px;
+
+    display:flex; justify-content: center;align-items:center;}
+footer span {color:var(--secondColor)}
+
+/*https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165900#overview*/
+@media (max-width:960px) {#section4 div div {grid-template-columns:repeat(2, 1fr);}}
+
+@media (max-width:720px) {
+    #menu /*close-menu*/{top:0;right:0;
+        z-index:2;position:fixed}
+    .menuLabel::after /*close-menu-label*/ {
+        color:var(--firstColor);background:var(--white);border:var(--firstColor) solid 0.1rem;
+        content:'≡';cursor:pointer;
+        font-size:1rem;width:1.2rem;height:1.2rem;line-height:1.2rem;padding:0.1rem;
+        top:0.42rem;left:0.42rem;
+        z-index:2;position:fixed;
+        text-align:center;}
+    .classAside {bottom:0; text-align:center;
+        display:none;} /*menu*/
+    .classAside section /*menu-content*/ {height:100vh;}
+    .classAside section 
+    , .classAside ul{flex-direction: column; justify-content:center;}
+    #menu:checked~.classAside {display:block}
+    #menu:checked~.menuLabel::after {content:'x'; line-height:1.05rem}
+    
+    #top{
+        color:var(--firstColor);background:var(--white);border:var(--firstColor) solid 0.1rem;
+        transform:rotate(-90deg);border-radius:50%;
+        font-size:0.5rem;padding:0.4rem;top:0.42rem;right:0.42rem;
+        display:block;position:fixed;z-index:1;
+        display:flex;justify-content:center;align-items:center;
+        }
+
+    .divBlockWhite{display:none}
+    
+    .sectionDiv1 {grid-template-columns:1fr;}
+
+    #section3 div div:nth-child(2),
+    #section5 div div:nth-child(2) {
+        grid-template-columns:1fr;}
+    #section3,#section5 {padding-top:3rem}
+
+    #section4 div div {grid-template-columns:1fr;}
+
+    #section6 {overflow:hidden;}}
+
+/*settings*/
+
+/*if have a bug:
+.section{.bBackground{min-height:100vh;}}*/
+/*.closeMargin{margin-block-start:0vh;}*/
