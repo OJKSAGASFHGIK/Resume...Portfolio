@@ -1,10 +1,4 @@
-*{margin:0;padding:0;
-    box-sizing:border-box;}
-
-html{color:black;background:white;
-    scroll-behavior:smooth;
-
-    font-size:27px;}
+.draft {border-top: green solid 1px; }
 
 :root{--firstColor:#5D0464;
     --secondColor:red;
@@ -12,6 +6,14 @@ html{color:black;background:white;
     --whiteTransparent:rgb(255, 255, 255, 0.81);
     --blackTransparent:rgba(127.5,127.5,127.5,0.42);
     --blackLittleTransparent:rgba(0,0,0,0.75)}
+
+*{margin:0;padding:0;
+    box-sizing:border-box;}
+
+html{color:black;background:white;
+    scroll-behavior:smooth;
+
+    font-size:27px;}
 
 body{font-size:100%;
     font-family: 'Abel', sans-serif;}
@@ -25,19 +27,21 @@ h4{font-size:144%;}
 h5{font-size:135%;}
 h6{font-size:126%;}
 
+/*table{max-width:50vw;}*/
+
 #menu {display:none;}
 #top {display:none;}
 
 .bBackground{/*means: Beautiful background*/
     color:var(--white);background-image: url('../img/a1rainbow-vortex.svg');
     padding:1.8%;
-    min-height:100vh;
+    min-height:84vh;
     background-size:cover;background-position:center center;
     gap:200px;}
 .sBackground{/*means: Simple background*/
     color:var(--firstColor);background-color: var(--white);
     padding: 1.8%;
-    min-height:100vh;
+    min-height:63vh;
     background-size:cover;background-position:center center;
 
     display:flex;
@@ -80,20 +84,26 @@ a{text-decoration:none;}
 https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165880#overview*/
 .sectionDiv1{display:grid; grid-template-columns:1fr 1.5fr;
     gap:1rem;}
-.sectionDivDiv1, .sectionDivDiv1-2iconJS{color:white;
-    display:flex;flex-flow:column nowrap;align-items:center;}
+.sectionDivDiv1 {color:white;
+    display:flex;flex-flow:column nowrap;align-items:start;}
+.sectionDivDiv1-2iconJS{display:flex;justify-content:end;align-items:start;}
+.sectionDivDiv1-2iconJS img { width: 63%; object-fit: contain; border:solid #bc1c4c 9px; }
+
 .sectionDivDiv1 h3{text-transform:uppercase;
-    font-size:2.34rem;}
+    font-size:1.8rem;}
+.sectionDivDiv1 a {color:cyan;transition:all 243ms ease-in-out}
+.sectionDivDiv1 a:hover {color: yellow;}
+
 .sectionDiv1-2iconJS img{max-width:100%;height:auto;align-items: center;}
 
 /* -Section 2:
 link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165882#overview*/
-#section2, #section6{color:var(--firstColor);
+#section2, #section6{
     box-sizing:border-box;
     min-height:100vh;}
-#section2 div, #section6 div{padding:15vh 15vw;}
+#section2, #section6 {padding:15vh 1.5vw;}
 #section2 h3, #section6 h3{font-weight:bold;
-    font-size:3.3rem;
+    font-size:2.1rem;
     display:flex; justify-content:center;align-items:center;}
 #section2 p, #section6 p{font-size:0.8rem;}
 
@@ -104,9 +114,9 @@ link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-
     
     justify-content:center;
     flex-flow:column wrap;}
-#section3 h3, #section5 h3 {
-    font-size: 3.3rem;margin-bottom:0.5rem;}
-#section3 p, #section5 p {font-size:0.8rem;padding-bottom:1rem;}
+#section3 h3, #section5 h3 { flex-flow: column wrap;
+    font-size: 1.8rem;margin:7.5vh 0 0.5rem;}
+#section3 p, #section5 p {font-size:0.84rem;padding-bottom:1rem;}
 
 #section3 div div:nth-child(2),
 #section5 div div:nth-child(2) {display:grid;
@@ -154,7 +164,7 @@ link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-
 
     display:flex; justify-content:center; align-items:center}
 table {border-collapse:collapse;
-    min-width:360px;width:100%;}
+    min-width:45vw;width:100%;}
 caption {font-family:italic;
     text-align:left;}
 table th, tfoot td {background:var(--blackTransparent);}
@@ -162,6 +172,12 @@ table th, table td {white-space:nowrap;
     border:var(--blackTransparent) solid 0.1rem;
     padding:0.33rem;
     text-align:left;}
+
+#section6 {max-width:100vw;}
+#section6 .section6grid {
+    display:grid; grid-template-columns: 1fr 1fr; overflow: hidden;}
+.section6gridDivDiv1 div { padding-right:24px; }
+.section6gridDivDiv1 div article { padding-top:18px; line-height:1.145rem;}
 
 /*https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165896#overview*/
 #section7 {padding-top:3rem;}
@@ -242,15 +258,19 @@ footer span {color:var(--secondColor)}
     .divBlockWhite{display:none}
     
     .sectionDiv1 {grid-template-columns:1fr;}
+    .sectionDivDiv1 h3 {padding-top:12vh;}
+    .sectionDivDiv1-2iconJS{display:flex;justify-content:center;align-items:center;}
 
     #section3 div div:nth-child(2),
     #section5 div div:nth-child(2) {
         grid-template-columns:1fr;}
     #section3,#section5 {padding-top:3rem}
-
+    
     #section4 div div {grid-template-columns:1fr;}
 
-    #section6 {overflow:hidden;}}
+    #section6 {overflow:hidden;}
+    #section6 .section6grid {grid-template-columns: 1fr;}
+}
 
 /*settings*/
 
