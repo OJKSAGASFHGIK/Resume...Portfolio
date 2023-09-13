@@ -115,7 +115,7 @@ link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-
     justify-content:center;
     flex-flow:column wrap;}
 #section3 h3, #section5 h3 { flex-flow: column wrap;
-    font-size: 1.8rem;margin:7.5vh 0 0.5rem;}
+    font-size: 1.8rem;margin:7.5vh 0 0.5rem; overflow: hidden;}
 #section3 p, #section5 p {font-size:0.84rem;padding-bottom:1rem;}
 
 #section3 div div:nth-child(2),
