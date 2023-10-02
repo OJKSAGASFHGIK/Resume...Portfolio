@@ -87,7 +87,7 @@ https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css
 .sectionDivDiv1 {color:white;
     display:flex;flex-flow:column nowrap;align-items:start;}
 .sectionDivDiv1-2iconJS{display:flex;justify-content:end;align-items:start;}
-.sectionDivDiv1-2iconJS img { width: 54%; object-fit: contain; border:solid #bc1c4c 9px; }
+.sectionDivDiv1-2iconJS img { width: 48%; object-fit: contain; border:solid #bc1c4c 9px; }
 
 .sectionDivDiv1 h3{text-transform:uppercase;
     font-size:1.8rem;}
